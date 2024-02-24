@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="A1 Contact Form.css">
+    </head>
+    <body>
+        <img src="ImageFolder/AI2Cropped.jpg" title="AI Informative" alt="Company Logo">
+        <Form id="ContactForm" method="post" action="mailto:mjohn572@mtroyal.ca">
+            <Legend> Contact </Legend>
+            <fieldset>
+                <p>
+                    Subject (max length 20 characters):
+                    <br>
+                    <label for="subject"> 
+                        <input name="subject" type="text" maxlength="20" size="45" placeholder="Enter the subject of your inquiry." />
+                    </label>
+                </p>
+                <p>
+                    Summary of Inquiry:
+                    <br>
+                    <label for="summary">
+                        <textarea id="summary" maxlength="255" rows="6" cols="50" placeholder="Write your inquiry here."></textarea>
+                    </label>
+                </p>
+                <p>
+                    Enter email address:
+                    <br> 
+                    <label> 
+                        <input name="getEmail" type="email" maxlength="30" size="45" placeholder="abc@xyz.com" />
+                    </label>
+                </p>
+                <p>
+                    Enter your primary phone number:
+                    <br>
+                    <label for="phoneNum"> 
+                        <input id="phoneNum" type="tel" size="45" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" placeholder="123-456-7890" />
+                    </label>
+                </p>
+                <p>
+                    If you would like to request a meeting to talk about your 
+                    <br>
+                    inquiry, enter which online platform you would like to use:
+                    <br>
+                    <label> Google Meet
+                        <input name="Radio Buttons" type="radio" value="radio1" />
+                    </label>  
+                    <label> Zoom
+                        <input name="Radio Buttons" type="radio" value="radio2" />
+                    </label>
+                    <label> Skype
+                        <input name="Radio Buttons" type="radio" value="radio2" />
+                    </label>
+                    <label> Other:
+                        <input name="Radio Buttons" type="radio" value="radio2" />
+                    </label>
+                    <br>
+                    <br>
+                    If you chose other, please specify:
+                    <br>
+                    <label>
+                        <input name="other" type="text" size="45" />
+                    </label>
+                </p>
+                <p>
+                    If you are requesting a meeting, please select a date that
+                     would work best for you:
+                    <br>
+                    <input name="Meeting Date" type="date" />
+                </p>
+                <p>
+                    CheckBoxes:
+                    <br>
+                    <label> Would you like to recieve our weekly AI newsletter?
+                        <input name="newsletter" type="checkbox" />
+                        
+                    </label>
+                    <br>
+                    <label> Check2
+                        <input name="Meeting Type" type="checkbox" />
+                    </label>
+                </p>
+            </fieldset>
+            <br>
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+        </Form>
+    </body>
+
+</html>
+
+
+<!--   -->
